@@ -12,7 +12,6 @@ class MyApp extends StatelessWidget {
         var url = urls[0];
         var queryParameters = Uri.splitQueryString(urls[1]);
 
-        // If you push the PassArguments route
         if (url == PassArgumentsScreen.routeName) {
           return MaterialPageRoute(
             settings: RouteSettings(name: settings.name),
