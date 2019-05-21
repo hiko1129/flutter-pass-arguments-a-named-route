@@ -14,7 +14,8 @@ class MyApp extends StatelessWidget {
 
         if (url == PassArgumentsScreen.routeName) {
           return MaterialPageRoute(
-            settings: RouteSettings(name: settings.name),
+            settings:
+                RouteSettings(name: settings.name), // これによりURL上に表示されるようになる
             builder: (context) {
               return PassArgumentsScreen(
                 title: queryParameters['title'],
@@ -45,7 +46,7 @@ class HomeScreen extends StatelessWidget {
               child: Text("Navigate to screen that extracts arguments"),
               onPressed: () {
                 Navigator.of(context).pushNamed(
-                  '/passArguments?title=hogehoge&message=fugafuga',
+                  '/passArguments?title=hogehoge&message=fugafuga', // onGenerateRouteで処理される
                 );
               },
             ),
