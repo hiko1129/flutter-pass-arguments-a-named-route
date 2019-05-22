@@ -1,5 +1,6 @@
-import 'package:flutter_web/material.dart';
 import 'dart:core';
+
+import 'package:flutter_web/material.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,14 +9,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       onGenerateRoute: (settings) {
-        var urls = settings.name.split('?');
-        var url = urls[0];
-        var queryParameters = Uri.splitQueryString(urls[1]);
+        var paths = settings.name.split('?');
+        var path = paths[0];
+        var queryParameters = Uri.splitQueryString(paths[1]);
 
-        if (url == PassArgumentsScreen.routeName) {
+        if (path == PassArgumentsScreen.routeName) {
           return MaterialPageRoute(
-            settings:
-                RouteSettings(name: settings.name), // これによりURL上に表示されるようになる
+            settings: RouteSettings(name: settings.name), // これによりURLが変わる
             builder: (context) {
               return PassArgumentsScreen(
                 title: queryParameters['title'],

@@ -1,0 +1,7 @@
+// This is a generated file; do not edit or check into version control.
+FLUTTER_ROOT=/Users/masaki.hikosaka/flutter
+FLUTTER_APPLICATION_PATH=/Users/masaki.hikosaka/workspace/hiko1129/flutter-pass-arguments-a-named-route
+FLUTTER_TARGET=lib/main.dart
+FLUTTER_BUILD_DIR=build
+SYMROOT=${SOURCE_ROOT}/../build/ios
+FLUTTER_FRAMEWORK_DIR=/Users/masaki.hikosaka/flutter/bin/cache/artifacts/engine/ios
